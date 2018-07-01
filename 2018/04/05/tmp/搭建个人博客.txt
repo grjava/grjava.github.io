@@ -1,0 +1,43 @@
+搭建个人博客
+
+系统：win7
+软件；iis php mysql wordpress
+
+安装
+d:\programfile\php
+d:\programfiles\mysql
+
+设置
+php
+php.ini-recommanded rename php.ini
+modify:	extension_dir="d:\programfiles\php\ext"
+	cgi.force_redirct=0
+	cgi.fix_pathinfo=1
+	fastcgi.impersonate=1
+	extension=php_mysql.dll
+	date.timezone=Asin/Shanghai
+iis
+处理程序映射,添加模块映射，请求路径：*.php
+			   模块：FastCgiModule
+			   可执行文件：d:\programfiles\php\php-cgi.exe
+			   名称：php fsatCGI
+
+测试：info.php <?php phpinfo(); ?>
+
+wordpress解压 workspaces\web\wordpress
+
+mysql 
+my-default.ini rename my.ini
+modify:
+basedir=d:/programfiles/mysql
+basedir=d:~workspaces
+
+default-character-set=gbk
+default-collation=gbk_chinses_d
+
+run:bin\>mysql --install mysql --defaults-file=my.ini
+         net start mysql
+
+参考资料：
+黄聪：Win7部署WordPress傻瓜式教程（IIS7.5+MySQL+PHP+WordPress）
+Windows下PHP安装配置,若水小筑
