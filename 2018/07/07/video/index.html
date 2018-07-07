@@ -5,20 +5,20 @@
   
 
   
-  <title>vim-problem | 精致生活，品味人生！</title>
+  <title>我的视频 | 精致生活，品味人生！</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="常见问题 在gvim 7.4执行12:e 1.txt:vert diffsplit 2.txt   报错：E810: Cannot read or write temp filesE97: 无法创建 diff">
-<meta name="keywords" content="problem,vim">
+  <meta name="description" content="一个人的时候听听音乐!">
+<meta name="keywords" content="视频">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vim-problem">
-<meta property="og:url" content="http://yoursite.com/2018/03/25/vim-problem/index.html">
+<meta property="og:title" content="我的视频">
+<meta property="og:url" content="http://yoursite.com/2018/07/07/video/index.html">
 <meta property="og:site_name" content="精致生活，品味人生！">
-<meta property="og:description" content="常见问题 在gvim 7.4执行12:e 1.txt:vert diffsplit 2.txt   报错：E810: Cannot read or write temp filesE97: 无法创建 diff">
+<meta property="og:description" content="一个人的时候听听音乐!">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-03-24T16:25:52.501Z">
+<meta property="og:updated_time" content="2018-07-07T13:21:41.930Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vim-problem">
-<meta name="twitter:description" content="常见问题 在gvim 7.4执行12:e 1.txt:vert diffsplit 2.txt   报错：E810: Cannot read or write temp filesE97: 无法创建 diff">
+<meta name="twitter:title" content="我的视频">
+<meta name="twitter:description" content="一个人的时候听听音乐!">
   
     <link rel="alternate" href="/atom.xml" title="精致生活，品味人生！" type="application/atom+xml">
   
@@ -68,10 +68,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-vim-problem" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-video" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/03/25/vim-problem/" class="article-date">
-  <time datetime="2018-03-24T16:15:58.000Z" itemprop="datePublished">2018-03-25</time>
+    <a href="/2018/07/07/video/" class="article-date">
+  <time datetime="2018-07-07T05:41:36.000Z" itemprop="datePublished">2018-07-07</time>
 </a>
     
   </div>
@@ -82,7 +82,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      vim-problem
+      我的视频
     </h1>
   
 
@@ -90,25 +90,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h2><ul>
-<li>在gvim 7.4执行<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:e 1.txt</span><br><span class="line">:vert diffsplit 2.txt</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>报错：<br>E810: Cannot read or write temp files<br>E97: 无法创建 diff<br><a id="more"></a></p>
-<p>问题出现在：set diffexpr=MyDiff() 解决办法：<br>在_vimrc或.vimrc中找到下面代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if &amp;sh =~ &apos;\&lt;cmd&apos;</span><br><span class="line">    let cmd = &apos;&quot;&quot;&apos; . $VIMRUNTIME . &apos;\diff&quot;&apos;</span><br><span class="line">    let eq = &apos;&quot;&apos;</span><br></pre></td></tr></table></figure></p>
-<p>替换成：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">if &amp;sh =~ &apos;\&lt;cmd&apos;</span><br><span class="line"></span><br><span class="line">    let cmd = &apos;&quot;&apos; . $VIMRUNTIME . &apos;\diff&quot;&apos;</span><br><span class="line">    let eq = &apos;&quot;&quot;&apos;</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li>vim中文乱码的问题<br>在_vimrc文件中增加：</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">” UTF-8 编码</span><br><span class="line">set encoding=utf-8</span><br><span class="line">set termencoding=utf-8</span><br><span class="line">set formatoptions+=mM</span><br><span class="line">set fencs=utf-8,gbk</span><br><span class="line">if v:lang =~? ‘^/(zh/)/|/(ja/)/|/(ko/)’</span><br><span class="line">set ambiwidth=double</span><br><span class="line">endif</span><br><span class="line">if has(“win32″)</span><br><span class="line">source $VIMRUNTIME/delmenu.vim</span><br><span class="line">source $VIMRUNTIME/menu.vim</span><br><span class="line">language messages zh_CN.utf-8</span><br><span class="line">endif</span><br><span class="line">else</span><br><span class="line">echoerr “Sorry, this version of (g)vim was not compiled with +multi_byte”</span><br><span class="line">endif</span><br></pre></td></tr></table></figure>
+        <p>一个人的时候听听音乐!<br><a id="more"></a><br>        <div style="width:100%; height:600px; margin:0px auto; overflow:hidden; position:relative;"><br>        <iframe style="width:950px;height:768px; position:relative; top:-100px; left:-15px;" src="http://v.mp.uc.cn/video.html?uc_param_str=frdnsnpfvecpntnwprdsssnikt&fromApp=weex#!wm_aid=9d9c795bc05f49bdac7a0e036d28f6d8!!wm_id=57d30171e25c41e9a844f497a1e63eb5" scrolling="no" frameborder="0"></iframe><br>        </div></p>
+<script>
+    document.write("hi china !");
+</script>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/25/vim-problem/" data-id="cjjbg43x70011vgnc3ptm8m4e" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/07/video/" data-id="cjjbg43ww000uvgncc4g6drs9" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/problem/">problem</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vim/">vim</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/视频/">视频</a></li></ul>
 
     </footer>
   </div>
@@ -116,19 +109,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2018/03/25/vim-install-vimrepress/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          vim-install-vimrepress
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/03/24/vim-intall-vundle/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2018/07/02/article-9/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">vim-intall-vundle</div>
+      <div class="article-nav-title">我爱男保姆</div>
     </a>
   
 </nav>
