@@ -7,13 +7,13 @@
   
   <title>vmware四种网络连接方式 | 精致生活，品味人生！</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="vmware四种网络连接方式 桥接 ,VMnet0 nat方式,VMnet8 host-only,VMnet1 ont use    vm网卡说明：如果将这两块卸载了，可以在vmware的“编辑”下的“虚拟网络编辑器”中点击“还原默认设置”，可重新将虚拟网卡还原。 桥接模式原理图查看连接在vmnet0交换机下windows的ip在linux下进入系统编辑网卡配置文件，命令为vi /etc/sysc">
+  <meta name="description" content="桥接 ,VMnet0 nat方式,VMnet8 host-only,VMnet1 ont use">
 <meta name="keywords" content="vmware">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vmware四种网络连接方式">
 <meta property="og:url" content="http://yoursite.com/2018/07/14/vmware四种网络连接方式/index.html">
 <meta property="og:site_name" content="精致生活，品味人生！">
-<meta property="og:description" content="vmware四种网络连接方式 桥接 ,VMnet0 nat方式,VMnet8 host-only,VMnet1 ont use    vm网卡说明：如果将这两块卸载了，可以在vmware的“编辑”下的“虚拟网络编辑器”中点击“还原默认设置”，可重新将虚拟网卡还原。 桥接模式原理图查看连接在vmnet0交换机下windows的ip在linux下进入系统编辑网卡配置文件，命令为vi /etc/sysc">
+<meta property="og:description" content="桥接 ,VMnet0 nat方式,VMnet8 host-only,VMnet1 ont use">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://pbunh12i4.bkt.clouddn.com/blog/180714/agm5a9Hil8.png">
 <meta property="og:image" content="http://pbunh12i4.bkt.clouddn.com/blog/180714/6c4hIl3J88.png">
@@ -25,10 +25,10 @@
 <meta property="og:image" content="http://pbunh12i4.bkt.clouddn.com/blog/180714/iFg8E6b6eC.png">
 <meta property="og:image" content="http://pbunh12i4.bkt.clouddn.com/blog/180714/BLCiJ47fF7.png">
 <meta property="og:image" content="http://pbunh12i4.bkt.clouddn.com/blog/180714/cm9B5a2c3d.png">
-<meta property="og:updated_time" content="2018-07-14T12:44:43.423Z">
+<meta property="og:updated_time" content="2018-07-14T14:34:10.606Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vmware四种网络连接方式">
-<meta name="twitter:description" content="vmware四种网络连接方式 桥接 ,VMnet0 nat方式,VMnet8 host-only,VMnet1 ont use    vm网卡说明：如果将这两块卸载了，可以在vmware的“编辑”下的“虚拟网络编辑器”中点击“还原默认设置”，可重新将虚拟网卡还原。 桥接模式原理图查看连接在vmnet0交换机下windows的ip在linux下进入系统编辑网卡配置文件，命令为vi /etc/sysc">
+<meta name="twitter:description" content="桥接 ,VMnet0 nat方式,VMnet8 host-only,VMnet1 ont use">
 <meta name="twitter:image" content="http://pbunh12i4.bkt.clouddn.com/blog/180714/agm5a9Hil8.png">
   
     <link rel="alternate" href="/atom.xml" title="精致生活，品味人生！" type="application/atom+xml">
@@ -101,21 +101,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="vmware四种网络连接方式"><a href="#vmware四种网络连接方式" class="headerlink" title="vmware四种网络连接方式"></a>vmware四种网络连接方式</h1><ol>
+        <ol>
 <li>桥接 ,VMnet0</li>
 <li>nat方式,VMnet8</li>
 <li>host-only,VMnet1</li>
-<li>ont use  </li>
+<li>ont use  <a id="more"></a>
+vm网卡说明：<br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/agm5a9Hil8.png" alt="mark"><br>如果将这两块卸载了，可以在vmware的“编辑”下的“虚拟网络编辑器”中点击“还原默认设置”，可重新将虚拟网卡还原。<h2 id="桥接模式"><a href="#桥接模式" class="headerlink" title="桥接模式"></a>桥接模式</h2>原理图<br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/6c4hIl3J88.png" alt="mark"><br>查看连接在vmnet0交换机下windows的ip<br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/bHmEFlJB9D.png" alt="mark"><br>在linux下进入系统编辑网卡配置文件，命令为vi /etc/sysconfig/network-scripts/ifcfg-eth0<br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/31ELHLD58d.png" alt="mark">  <h2 id="nat模式"><a href="#nat模式" class="headerlink" title="nat模式"></a>nat模式</h2>原理图<br>在NAT模式中，<strong>主机网卡直接与虚拟NAT设备相连</strong>，然后虚拟NAT设备与虚拟DHCP服务器一起连接在虚拟交换机VMnet8上，这样就实现了虚拟机联网。那么我们会觉得很奇怪，为什么需要虚拟网卡VMware Network Adapter VMnet8呢？原来我们的VMware Network Adapter VMnet8虚拟网卡主要是为了实现主机与虚拟机之间的通信。在之后的设置步骤中，我们可以加以验证。<br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/cf8eaKCB1l.png" alt="mark"><br>NAT网络设置<br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/2i5b70mijc.png" alt="mark"><br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/aDgmhA3L6k.png" alt="mark"><br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/iFg8E6b6eC.png" alt="mark"><br>在linux下进入系统编辑网卡配置文件，命令为vi /etc/sysconfig/network-scripts/ifcfg-eth0<br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/BLCiJ47fF7.png" alt="mark"><h2 id="host-only"><a href="#host-only" class="headerlink" title="host-only"></a>host-only</h2>原理图<br>Host-Only模式其实就是NAT模式去除了虚拟NAT设备，然后使用VMware Network Adapter VMnet1虚拟网卡连接VMnet1虚拟交换机来与虚拟机通信的，Host-Only模式将虚拟机与外网隔开，使得虚拟机成为一个独立的系统，只与主机相互通讯。其网络结构如下图所示：<br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/cm9B5a2c3d.png" alt="mark"></li>
 </ol>
-<p>vm网卡说明：<br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/agm5a9Hil8.png" alt="mark"><br>如果将这两块卸载了，可以在vmware的“编辑”下的“虚拟网络编辑器”中点击“还原默认设置”，可重新将虚拟网卡还原。</p>
-<h2 id="桥接模式"><a href="#桥接模式" class="headerlink" title="桥接模式"></a>桥接模式</h2><p>原理图<br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/6c4hIl3J88.png" alt="mark"><br>查看连接在vmnet0交换机下windows的ip<br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/bHmEFlJB9D.png" alt="mark"><br>在linux下进入系统编辑网卡配置文件，命令为vi /etc/sysconfig/network-scripts/ifcfg-eth0<br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/31ELHLD58d.png" alt="mark">  </p>
-<h2 id="nat模式"><a href="#nat模式" class="headerlink" title="nat模式"></a>nat模式</h2><p>原理图<br>在NAT模式中，<strong>主机网卡直接与虚拟NAT设备相连</strong>，然后虚拟NAT设备与虚拟DHCP服务器一起连接在虚拟交换机VMnet8上，这样就实现了虚拟机联网。那么我们会觉得很奇怪，为什么需要虚拟网卡VMware Network Adapter VMnet8呢？原来我们的VMware Network Adapter VMnet8虚拟网卡主要是为了实现主机与虚拟机之间的通信。在之后的设置步骤中，我们可以加以验证。<br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/cf8eaKCB1l.png" alt="mark"><br>NAT网络设置<br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/2i5b70mijc.png" alt="mark"><br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/aDgmhA3L6k.png" alt="mark"><br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/iFg8E6b6eC.png" alt="mark"><br>在linux下进入系统编辑网卡配置文件，命令为vi /etc/sysconfig/network-scripts/ifcfg-eth0<br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/BLCiJ47fF7.png" alt="mark"></p>
-<h2 id="host-only"><a href="#host-only" class="headerlink" title="host-only"></a>host-only</h2><p>原理图<br>Host-Only模式其实就是NAT模式去除了虚拟NAT设备，然后使用VMware Network Adapter VMnet1虚拟网卡连接VMnet1虚拟交换机来与虚拟机通信的，Host-Only模式将虚拟机与外网隔开，使得虚拟机成为一个独立的系统，只与主机相互通讯。其网络结构如下图所示：<br><img src="http://pbunh12i4.bkt.clouddn.com/blog/180714/cm9B5a2c3d.png" alt="mark"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/14/vmware四种网络连接方式/" data-id="cjjlgzygb00033cncke40c2wd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/07/14/vmware四种网络连接方式/" data-id="cjjliq8ja00185wnconxou6hb" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vmware/">vmware</a></li></ul>
@@ -189,6 +186,10 @@
       <ul>
         
           <li>
+            <a href="/2018/07/14/test/">test</a>
+          </li>
+        
+          <li>
             <a href="/2018/07/14/Windows环境下从零开始搭建Nodejs+Express+Ejs框架/">Windows环境下从零开始搭建Nodejs+Express+Ejs框架</a>
           </li>
         
@@ -202,10 +203,6 @@
         
           <li>
             <a href="/2018/07/07/video/">我的视频</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/07/nlll/">(no title)</a>
           </li>
         
       </ul>
