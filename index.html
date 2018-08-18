@@ -65,10 +65,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-使用github desktop连接github" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-记录下认识的每一个人" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/07/22/使用github desktop连接github/" class="article-date">
-  <time datetime="2018-07-22T15:21:36.000Z" itemprop="datePublished">2018-07-22</time>
+    <a href="/2018/08/18/记录下认识的每一个人/" class="article-date">
+  <time datetime="2018-08-18T05:26:36.000Z" itemprop="datePublished">2018-08-18</time>
 </a>
     
   </div>
@@ -79,7 +79,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/22/使用github desktop连接github/">使用github desktop连接github</a>
+      <a class="article-title" href="/2018/08/18/记录下认识的每一个人/">记录下认识的每一个人</a>
     </h1>
   
 
@@ -87,125 +87,177 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="修改git-config文件"><a href="#修改git-config文件" class="headerlink" title="修改git config文件"></a>修改git config文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd c:\programdata\git\</span><br><span class="line">copy config config-副本</span><br><span class="line">gvim config</span><br><span class="line">修改	sslCAinfo = C:/Users/grJava/AppData/Local/GitHubDesktop/app-1.2.6/resources/app/git/mingw64/ssl/certs/ca-bundle.crt</span><br></pre></td></tr></table></figure>
-<h2 id="clone已经存在的项目java-tankwar"><a href="#clone已经存在的项目java-tankwar" class="headerlink" title="clone已经存在的项目java_tankwar"></a>clone已经存在的项目java_tankwar</h2><p>参考资料：</p>
+        <h2 id="微信公从号项目"><a href="#微信公从号项目" class="headerlink" title="微信公从号项目"></a>微信公从号项目</h2><p>公从号名称：一只鱼的下午茶<br>功能介绍：我的世界你曾经来过。生命中，我们会认识很多很多人，来来往往。刚好遇见了，就坐下来喝杯茶聊会天。<br>账号主体：郭瑞  </p>
+<h2 id="菜单"><a href="#菜单" class="headerlink" title="菜单"></a>菜单</h2><ul>
+<li>闲聊（信息咨询）</li>
+<li>泡茶（听歌，看小说，吃零食）</li>
+<li>故人（郭瑞）</li>
+</ul>
+<h2 id="闲聊"><a href="#闲聊" class="headerlink" title="闲聊"></a>闲聊</h2><p>留给故人的一段话，一条语音。想说，想写，只是不想让人知道。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/18/记录下认识的每一个人/" data-id="cjkz3gehm001eqgnc5ybkg2st" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/记录生活/">记录生活</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-在heroku上开始一个php应用" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/14/在heroku上开始一个php应用/" class="article-date">
+  <time datetime="2018-08-14T14:21:36.000Z" itemprop="datePublished">2018-08-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/14/在heroku上开始一个php应用/">在heroku上开始一个php应用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="set-up"><a href="#set-up" class="headerlink" title="set up"></a>set up</h2><p>In this step you’ll install the Heroku Command Line Interface (CLI). You use the CLI to manage and scale your applications, provision add-ons, view your application logs, and run your application locally.</p>
+<p>Once installed, you can use the heroku command from your command shell.<br>On Windows, start the Command Prompt (cmd.exe) or Powershell to access the command shell.<br>Log in using the email address and password you used when creating your Heroku account:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ heroku login</span><br><span class="line">Enter your Heroku credentials.</span><br><span class="line">Email: user@example.com</span><br><span class="line">Password:</span><br></pre></td></tr></table></figure></p>
+<p>Authenticating is required to allow both the heroku and git commands to operate.</p>
+<p>Before you continue, check that you have the prerequisites installed properly. Type each command below and make sure it displays the version you have installed. (Your versions might be different from the example.) If no version is returned, go back to the introduction of this tutorial and install the prerequisites.<br>All of the following local setup will be required to complete the “Declare app dependencies” and subsequent steps.<br>This tutorial will work if you have PHP installed - check that it’s there:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ php -v</span><br><span class="line">PHP 7.0.5 (cli) (built: Apr 26 2016 04:39:48) ( NTS )</span><br><span class="line">Copyright (c) 1997-2016 The PHP Group</span><br><span class="line">Zend Engine v3.0.0, Copyright (c) 1998-2016 Zend Technologies</span><br></pre></td></tr></table></figure></p>
+<p>Now check that you have composer installed. If not, install it and test again:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ composer -V</span><br><span class="line">Composer version 1.4.1 2017-03-10 09:29:45</span><br></pre></td></tr></table></figure></p>
+<p>Now check that you have git installed. If not, install it and test again.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git --version</span><br><span class="line">git version 2.12.2</span><br></pre></td></tr></table></figure></p>
+<h2 id="Prepare-the-app"><a href="#Prepare-the-app" class="headerlink" title="Prepare the app"></a>Prepare the app</h2><p>In this step, you will prepare a simple application that can be deployed.<br>To clone the sample application so that you have a local version of the code that you can then deploy to Heroku, execute the following commands in your local command shell or terminal:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/heroku/php-getting-started.git</span><br><span class="line">$ cd php-getting-started</span><br></pre></td></tr></table></figure></p>
+<p>You now have a functioning git repository that contains a simple application as well as a composer.json file. Make sure you’ve installed Composer. Heroku uses Composer for dependency management in PHP projects, and the composer.json file indicates to Heroku that your application is written in PHP.</p>
+<h2 id="Deploy-the-app"><a href="#Deploy-the-app" class="headerlink" title="Deploy the app"></a>Deploy the app</h2><p>In this step you will deploy the app to Heroku.<br>Create an app on Heroku, which prepares Heroku to receive your source code:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ heroku create</span><br><span class="line">Creating sharp-rain-871... done, stack is cedar-14</span><br><span class="line">http://sharp-rain-871.herokuapp.com/ | https://git.heroku.com/sharp-rain-871.git</span><br><span class="line">Git remote heroku added</span><br></pre></td></tr></table></figure></p>
+<p>解释以上代码是如何运行的：  </p>
 <ol>
-<li><a href="https://desktop.github.com/" target="_blank" rel="noopener">github desktop官方下载</a></li>
-<li><a href="https://www.imooc.com/video/7625" target="_blank" rel="noopener">github客户端使用视频</a></li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/22/使用github desktop连接github/" data-id="cjjwmt86t0017g0nc8xbmk63y" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-使用git连接github" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/22/使用git连接github/" class="article-date">
-  <time datetime="2018-07-22T13:04:36.000Z" itemprop="datePublished">2018-07-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/22/使用git连接github/">使用git连接github</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ol>
-<li>打开Git Bash  </li>
-<li>配置Git  <ol>
-<li>先输入ssh-keygen –t rsa –C “邮箱地址”,注意ssh-keygen之间是没有空格的,其他的之间是有空格的。  </li>
-<li>回车之后,会出现一行,让你输入一个保存密钥的地方,括号里面是它默认的位置，这里会让你输入几次内容，都不用输入，直接回车就可以了，可以看到如图的效果（这里最好都不要输入，直接回车，我第一次更改了保存的路径，就出了问题，少了一个文件）  </li>
-<li>回车之后,这样密钥就生成了,可以打开id_rsa.pub（位置根据你的电脑来看）来查看,我使用的是记事本直接打开的这个文件,里面的所有内容就是这个密钥,一会需要使用的时候,就直接全选复制就可以了</li>
-<li>转到github网站上去配置一下ssh key,点击箭头指示的三角图标，选择Settings，然后点击左侧的SSH Keys，之后点击右侧的Add SSH Key，这样就会出现添加SSH Key的界面，在Title这一栏填一个名字，名字随意起，之后打开刚才生成的那个文件id_rsa.pub，全选复制里面的内容到Key这一栏中，点击Add Key按钮完成操作，这时你填的邮箱会收到一封确认的邮件，不用管它。</li>
-<li>在git bash下输入  ssh –T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>  命令 ，验证一下是否设置成功。如果你是第一次，会让你输入yes或no,这时输入yes就可以了，其它显示就和我这个是一样的。如果你的是出现不是这些内容，有可能是显示权限问题什么的，就应该是我上面提到的那种情况，你看一下你生成密钥时是否操作正确，目录下是否有那个known_hosts这个文件。</li>
-<li>配置用户名和邮箱，命令如下：  <pre><code>git config –global user.name “用户名”  
-git config –global user.email “邮箱”
-</code></pre></li>
-</ol>
+<li><p>登陆成功后进入到你要部署的工程目录，初始化git和设置git项目地址</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ cd php-getting-started</span><br><span class="line">$ git init</span><br><span class="line">$ heroku git:remote -a php-getting-started</span><br><span class="line">或者</span><br><span class="line">$ git remote add heroku https://git.heroku.com/php-getting-started.git</span><br></pre></td></tr></table></figure>
 </li>
-<li>托管项目。已经在github上面创建了一个叫grjava的仓库，现在就在本地创建一个目录，来管理这个仓库。<ol>
-<li>随意创建了一个目录叫grjava。</li>
-<li>右击目录，出现的菜单中有Git Bash Here，点击它。</li>
-<li>输入 git init，来完成初始化工作。这时候目录里面就多了一个.git的目录了。注意一共有三个命令，init/remote/pull均在上面显示，下面几步效果都在这张图中显示出来了。</li>
-<li>在终端上输入如下命令，增加对我们github上创建的buxingxing仓库的管理。<br>   git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:bxxfighting/buxingxing.git<br>   其中bxxfighting是我在网站上注册时使用的用户名，buxingxing.git是我为这个项目建立的仓库名。  </li>
-<li>由于我建立仓库的时候创建README.md之时，已经算一次提交了，我需要先在本地同步一下仓库的内容,命令如下：<br>   git pull <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:bxxfighting/buxingxing.git<br> 完成的效果如下图，并且本地目录下多出了README.md文件。<br> 现在我们在本地目录创建我们的文件。  </li>
-<li>下面就要把我刚创建的文件上传到到仓库上去了，首先执行增加命令，如下：<br> git add .    （这后面是一个英文的句号）<br> add后面加了一个点，是想要提交所有文件，如果想提交指定的文件，可以写文件名，执行完增加命令后，要执行提交命令，如下：<br> git commit –m “这里写下你自己的记录本次提交内容的信息”<br> -m后面跟提示信息，这个提示信息是一定要写的，不仅是规则，同时也方便我们记录我们提交的过程，写清晰为什么提交或修改了什么是非常有用的，提交完成后，我们就要把它推送到远程仓库上去了，命令如下：<br> git push <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:bxxfighting/buxingxing.git<br> 这样就完成了我们要做的所有任务  </li>
-</ol>
+<li><p>完成之后提交项目到git</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git add -A</span><br><span class="line">$ git commit -m &quot;init php-getting-started&quot;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>现在就基本上可以使用了，每次增加了新文件就先add，然后commit，如果只是改了文件的内容，只执行commit就行了，当然最后一步都是要执行push，把所以改变推送到我们的github上去托管。<br>其实，这里有一处提醒，就是最后push那一步，提醒中说，已经有更牛逼的办法了。所以，你自己去根据提示去看看什么牛逼的办法吧，如果懒，就这么用就行倒是。<br>到这就差不多了，我每次用其实都来看看，不是总是用，有点记不住，第一次这样就过就记下了，方便以后使用。其实<br>这真是非常方便的，可以使用熟练，管理自己的代码和笔记很好的东西，以前管理代码，最近发现每次看电子书，里面写上笔记，但是同步费劲，现在决定用它来管理了，回去在自己的笔记本上也这样来用，就可以同步自己看的进度了。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/22/使用git连接github/" data-id="cjjwmt87k001mg0ncc2ptkdxd" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-认识git" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/07/22/认识git/" class="article-date">
-  <time datetime="2018-07-22T12:21:36.000Z" itemprop="datePublished">2018-07-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/22/认识git/">认识git</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="什么是git"><a href="#什么是git" class="headerlink" title="什么是git"></a>什么是git</h2><p> Git是目前世界上最先进的分布式版本控制系统。</p>
-<h2 id="客户端安装Git"><a href="#客户端安装Git" class="headerlink" title="客户端安装Git"></a>客户端安装Git</h2><p>使用windows从<a href="http://git-scm.com/download/" target="_blank" rel="noopener">git</a>下载并安装。  </p>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><h2 id="相关书籍"><a href="#相关书籍" class="headerlink" title="相关书籍"></a>相关书籍</h2><ul>
-<li>Git权威指南</li>
+<p>git add -A  提交所有变化。<br>git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)。<br>git add .  提交新文件(new)和被修改(modified)文件，不包括被删除(deleted)文件。  </p>
+<ol>
+<li><p>在工程目录下建立一个composer.json文件，内容为{}即可,然后需要提交到项目中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ echo &quot;&#123;&#125;&quot; &gt; composer.json</span><br><span class="line">$ git add  composer.json</span><br><span class="line">$ git commit -m &quot;add  composer.json&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置heroku的php构建工具包</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ heroku buildpacks:set https://github.com/heroku/heroku-buildpack-php</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>-在工程根目录下添加Procfile文件，用于设置项目执行的初始命令（非常重要，解释下‘php -S 0.0.0.0:PORT−tsite/api/html′这个就是php5.4之后自带的webserver，用−S启动，0.0.0.0表示任何机器可访问，PORT−tsite/api/html′这个就是php5.4之后自带的webserver，用−S启动，0.0.0.0表示任何机器可访问，PORT是端口（不用改），-t表示docroot,如果启动web目录在根目录可不写，如果在子目录，写上相对路径即可如site/api/html ），<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ echo &quot; web: php -S 0.0.0.0:$PORT -t site/api/html  &quot; &gt; Procfile</span><br><span class="line">$ git add  Procfile</span><br><span class="line">$ git commit -m &quot;add Procfile to start program&quot;</span><br></pre></td></tr></table></figure></p>
+<p>When you create an app, a git remote (called heroku) is also created and associated with your local git repository.<br>Heroku generates a random name (in this case sharp-rain-871) for your app, or you can pass a parameter to specify your own app name.<br>Now deploy your code:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">$ git push heroku master</span><br><span class="line">remote: Building source:</span><br><span class="line">remote:</span><br><span class="line">remote: -----&gt; PHP app detected</span><br><span class="line">remote: -----&gt; Bootstrapping...</span><br><span class="line">remote: -----&gt; Installing platform packages...</span><br><span class="line">remote:        NOTICE: No runtime required in composer.json; requirements</span><br><span class="line">remote:        from dependencies in composer.lock will be used for selection</span><br><span class="line">remote:        - php (7.1.3)</span><br><span class="line">remote:        - apache (2.4.20)</span><br><span class="line">remote:        - nginx (1.8.1)</span><br><span class="line">remote: -----&gt; Installing dependencies...</span><br><span class="line">remote:        Composer version 1.4.1 2017-03-10 09:29:45</span><br><span class="line">remote:        Loading composer repositories with package information</span><br><span class="line">remote:        Installing dependencies from lock file</span><br><span class="line">remote:        Package operations: 12 installs, 0 updates, 0 removals</span><br><span class="line">remote:          - Installing psr/log (1.0.2): Loading from cache</span><br><span class="line">remote:          - Installing monolog/monolog (1.22.1): Loading from cache</span><br><span class="line">...</span><br><span class="line">remote:          - Installing symfony/twig-bridge (v3.2.7): Loading from cache</span><br><span class="line">remote:        Generating optimized autoload files</span><br><span class="line">remote: -----&gt; Preparing runtime environment...</span><br><span class="line">remote: -----&gt; Checking for additional extensions to install...</span><br><span class="line">remote: -----&gt; Discovering process types</span><br><span class="line">remote:        Procfile declares types -&gt; web</span><br><span class="line">remote:</span><br><span class="line">remote: -----&gt; Compressing...</span><br><span class="line">remote:        Done: 14.8M</span><br><span class="line">remote: -----&gt; Launching...</span><br><span class="line">remote:        Released v17</span><br><span class="line">remote:        https://gsphpjon.herokuapp.com/ deployed to Heroku</span><br><span class="line">remote:</span><br><span class="line">remote: Verifying deploy... done.</span><br><span class="line">To https://git.heroku.com/gsphpjon.git</span><br><span class="line"> + 264e577...4f2369c master -&gt; master (forced update)</span><br></pre></td></tr></table></figure></p>
+<p>The application is now deployed. Ensure that at least one instance of the app is running:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ heroku ps:scale web=1</span><br></pre></td></tr></table></figure></p>
+<p>Now visit the app at the URL generated by its app name. As a handy shortcut, you can open the website as follows:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ heroku open</span><br></pre></td></tr></table></figure></p>
+<h2 id="View-logs"><a href="#View-logs" class="headerlink" title="View logs"></a>View logs</h2><p>Heroku treats logs as streams of time-ordered events aggregated from the output streams of all your app and Heroku components, providing a single channel for all of the events.<br>View information about your running app using one of the logging commands, heroku logs –tail:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ heroku logs --tail</span><br><span class="line">014-05-27T11:03:21.033331+00:00 app[web.1]: Booting on port 28661...</span><br><span class="line">2014-05-27T11:03:21.127050+00:00 app[web.1]: Using Apache2 configuration file &apos;vendor/heroku/heroku-buildpack-php/conf/apache2/heroku.conf&apos;</span><br><span class="line">2014-05-27T11:03:21.068192+00:00 app[web.1]: Using PHP configuration (php.ini) file &apos;vendor/heroku/heroku-buildpack-php/conf/php/php.ini&apos;</span><br><span class="line">...</span><br><span class="line">2014-05-27T11:03:23.883157+00:00 heroku[web.1]: State changed from starting to up</span><br></pre></td></tr></table></figure></p>
+<p>Visit your application in the browser again, and you’ll see another log message generated.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2014-05-30T13:18:13.581545+00:00 app[web.1]: [30-May-2014 13:18:13] WARNING: [pool www] child 59 said into stderr: &quot;[2014-05-30 13:18:13] myapp.DEBUG: logging output. [] []&quot;</span><br></pre></td></tr></table></figure></p>
+<p>Logging, then, is simply a matter of directing output to stdout or stderr - Heroku does the work of aggregating this across all the app and system components. View the web/index.php file to see how the Monolog service is configured to write its output to stderr.<br>Press Control+C to stop streaming the logs.</p>
+<h2 id="Define-a-Procfile"><a href="#Define-a-Procfile" class="headerlink" title="Define a Procfile"></a>Define a Procfile</h2><p>Use a Procfile, a text file in the root directory of your application, to explicitly declare what command should be executed to start your app.<br>The Procfile in the example app you deployed looks like this:<br><strong><em>web: vendor/bin/heroku-php-apache2 web/</em></strong><br>This declares a single process type, web, and the command needed to run it. The name web: is important here. It declares that this process type will be attached to the HTTP routing stack of Heroku, and receive web traffic when deployed.<br>Procfiles can contain additional process types. For example, you might declare one for a background worker process that processes items off of a queue.</p>
+<h2 id="Scale-the-app"><a href="#Scale-the-app" class="headerlink" title="Scale the app"></a>Scale the app</h2><p>Right now, your app is running on a single web dyno. Think of a dyno as a lightweight container that runs the command specified in the Procfile.<br>You can check how many dynos are running using the ps command:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ heroku ps</span><br><span class="line">=== web (Free): `vendor/bin/heroku-php-apache2`</span><br><span class="line">web.1: up 2014/05/27 12:03:23 (~ 11m ago)</span><br></pre></td></tr></table></figure></p>
+<p>By default, your app is deployed on a free dyno. Free dynos will sleep after a half hour of inactivity (if they don’t receive any traffic). This causes a delay of a few seconds for the first request upon waking. Subsequent requests will perform normally. Free dynos also consume from a monthly, account-level quota of free dyno hours - as long as the quota is not exhausted, all free apps can continue to run.<br>To avoid dyno sleeping, you can upgrade to a hobby or professional dyno type as described in the Dyno Types article. For example, if you migrate your app to a professional dyno, you can easily scale it by running a command telling Heroku to execute a specific number of dynos, each running your web process type.<br>Scaling an application on Heroku is equivalent to changing the number of dynos that are running. Scale the number of web dynos to zero:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ heroku ps:scale web=0</span><br></pre></td></tr></table></figure></p>
+<p>Access the app again by hitting refresh on the web tab, or heroku open to open it in a web tab. You will get an error message because you no longer have any web dynos available to serve requests.<br>Scale it up again:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ heroku ps:scale web=1</span><br></pre></td></tr></table></figure></p>
+<p>For abuse prevention, scaling a non-free application to more than one dyno requires account verification.</p>
+<h2 id="Declare-app-dependencies"><a href="#Declare-app-dependencies" class="headerlink" title="Declare app dependencies"></a>Declare app dependencies</h2><p>Heroku recognizes an app as PHP by the existence of a composer.json file in the root directory.<br>The demo app you deployed already has a composer.json, and it looks something like this:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;require&quot; : &#123;</span><br><span class="line">    &quot;silex/silex&quot;: &quot;^2.0.4&quot;,</span><br><span class="line">    &quot;monolog/monolog&quot;: &quot;^1.22&quot;,</span><br><span class="line">    &quot;twig/twig&quot;: &quot;^2.0&quot;,</span><br><span class="line">    &quot;symfony/twig-bridge&quot;: &quot;^3&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;require-dev&quot;: &#123;</span><br><span class="line">    &quot;heroku/heroku-buildpack-php&quot;: &quot;*&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>The composer.json file specifies the dependencies that should be installed with your application. When an app is deployed, Heroku reads this file and installs the appropriate dependencies into the vendor directory.<br>Your PHP app can then make use of the dependencies after a simple require:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">require(&apos;../vendor/autoload.php&apos;);</span><br></pre></td></tr></table></figure></p>
+<p>Run the following command to install the dependencies, preparing your system for running the app locally:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ composer update</span><br><span class="line">Loading composer repositories with package information</span><br><span class="line">Updating dependencies (including require-dev)</span><br><span class="line">  - Installing psr/log (1.0.0)</span><br><span class="line">    Loading from cache</span><br><span class="line">...</span><br><span class="line">Writing lock file</span><br><span class="line">Generating autoload files</span><br></pre></td></tr></table></figure></p>
+<p>You should always check composer.json and composer.lock into your git repo. The vendor directory should be included in your .gitignore file.<br><a href="https://docs.phpcomposer.com/01-basic-usage.html" target="_blank" rel="noopener">composer.json是什么？</a><br><a href="https://packagist.org/" target="_blank" rel="noopener">composer的主要资源</a></p>
+<h2 id="Push-local-changes"><a href="#Push-local-changes" class="headerlink" title="Push local changes"></a>Push local changes</h2><p>In this step you’ll learn how to propagate a local change to the application through to Heroku. As an example, you’ll modify the application to add an additional dependency (the Cowsay library) and the code to use it.<br>First, use composer to require the new dependency:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ composer require alrik11es/cowsayphp</span><br></pre></td></tr></table></figure></p>
+<p>This will also change composer.json. If you introduced the dependency by modifying the composer.json file yourself, be sure to update the dependencies by running:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ composer update</span><br></pre></td></tr></table></figure></p>
+<p>Now modify web/index.php to use this library. Add a new route after the existing one, for /cowsay:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$app-&gt;get(&apos;/cowsay&apos;, function() use($app) &#123;</span><br><span class="line">  $app[&apos;monolog&apos;]-&gt;addDebug(&apos;cowsay&apos;);</span><br><span class="line">  return &quot;&lt;pre&gt;&quot;.\Cowsayphp\Cow::say(&quot;Cool beans&quot;).&quot;&lt;/pre&gt;&quot;;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>When that route is visited, it will render a beautiful cow.<br>Now deploy. Almost every deploy to Heroku follows this same pattern.<br>First, add the modified files to the local git repository:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br></pre></td></tr></table></figure></p>
+<p>Now commit the changes to the repository:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m &quot;Demo&quot;</span><br></pre></td></tr></table></figure></p>
+<p>Now deploy, just as you did previously:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push heroku master</span><br></pre></td></tr></table></figure></p>
+<p>Finally, check that everything is working:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ heroku open cowsay</span><br></pre></td></tr></table></figure></p>
+<h2 id="Provision-add-ons"><a href="#Provision-add-ons" class="headerlink" title="Provision add-ons"></a>Provision add-ons</h2><p>Add-ons are third-party cloud services that provide out-of-the-box additional services for your application, from persistence through logging to monitoring and more.<br>By default, Heroku stores 1500 lines of logs from your application. However, it makes the full log stream available as a service - and several add-on providers have written logging services that provide things such as log persistence, search, and email and SMS alerts.<br>In this step you will provision one of these logging add-ons, Papertrail.<br>Provision the papertrail logging add-on:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ heroku addons:create papertrail</span><br><span class="line">Adding papertrail on sharp-rain-871... done, v4 (free)</span><br><span class="line">...</span><br><span class="line">Happy logging!</span><br><span class="line">Use `heroku addons:docs papertrail` to view documentation.</span><br></pre></td></tr></table></figure></p>
+<p>To help with abuse prevention, provisioning an add-on requires account verification. If your account has not been verified, you will be directed to visit the verification site.<br>The add-on is now deployed and configured for your application. You can list add-ons for your app like so:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ heroku addons</span><br></pre></td></tr></table></figure></p>
+<p>To see this particular add-on in action, visit your application’s Heroku URL a few times. Each visit will generate more log messages, which should now get routed to the papertrail add-on. Visit the papertrail console to see the log messages:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ heroku addons:open papertrail</span><br></pre></td></tr></table></figure></p>
+<p>Your browser will open up a Papertrail web console, showing the latest log events. The interface lets you search and set up alerts:<br><img src="http://pbunh12i4.bkt.clouddn.com/blog_1534261523_13612.png" alt=""></p>
+<h2 id="Start-an-interactive-shell"><a href="#Start-an-interactive-shell" class="headerlink" title="Start an interactive shell"></a>Start an interactive shell</h2><p>You can run a command, typically scripts and applications that are part of your app, in a one-off dyno using the heroku run command. It can also be used to launch an interactive PHP shell attached to your local terminal for experimenting in your app’s environment:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ heroku run &quot;php -a&quot;</span><br><span class="line">Running `php -a` attached to terminal... up, run.8081</span><br><span class="line">Interactive shell</span><br><span class="line"></span><br><span class="line">php &gt; echo PHP_VERSION;</span><br><span class="line">5.5.12</span><br></pre></td></tr></table></figure></p>
+<p>If you receive an error, Error connecting to process, then you may need to configure your firewall.<br>The PHP console has nothing loaded other than the PHP standard library. To quit the PHP shell, type quit.<br>To get a real feel for how dynos work, you can create another one-off dyno and run the bash command, which opens up a shell on that dyno. You can then execute commands there. Each dyno has its own ephemeral filespace, populated with your app and its dependencies - once the command completes (in this case, bash), the dyno is removed.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ heroku run bash</span><br><span class="line">Running `bash` attached to terminal... up, run.3052</span><br><span class="line">~ $ ls</span><br><span class="line">Procfile  README.md  composer.json  composer.lock  vendor  views  web</span><br><span class="line">~ $ exit</span><br><span class="line">exit</span><br></pre></td></tr></table></figure></p>
+<p>Don’t forget to type exit to exit the shell and terminate the dyno.`</p>
+<h2 id="Define-config-vars"><a href="#Define-config-vars" class="headerlink" title="Define config vars"></a>Define config vars</h2><p>Heroku lets you externalise configuration - storing data such as encryption keys or external resource addresses in config vars.<br>At runtime, config vars are exposed as environment variables to the application.<br>Modify web/index.php so that root route returns the word Hello repeated by the value of the TIMES environment variable:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$app-&gt;get(&apos;/&apos;, function() use($app) &#123;</span><br><span class="line">  $app[&apos;monolog&apos;]-&gt;addDebug(&apos;logging output.&apos;);</span><br><span class="line">  return str_repeat(&apos;Hello&apos;, getenv(&apos;TIMES&apos;));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>To set the config var on Heroku, execute the following:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ heroku config:set TIMES=20</span><br></pre></td></tr></table></figure></p>
+<p>View the config vars that are set using heroku config:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ heroku config</span><br><span class="line">=== sharp-rain-871 Config Vars</span><br><span class="line">PAPERTRAIL_API_TOKEN: erdKhPeeehIcdfY7ne</span><br><span class="line">TIMES: 20</span><br></pre></td></tr></table></figure></p>
+<p>Deploy your changed application to Heroku to see this in action.</p>
+<h2 id="Provision-a-database"><a href="#Provision-a-database" class="headerlink" title="Provision a database"></a>Provision a database</h2><p>The add-on marketplace has a large number of data stores, from Redis and MongoDB providers, to Postgres and MySQL. In this step you will add a free Heroku Postgres Starter Tier dev database to your app.<br>Add the database:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ heroku addons:create heroku-postgresql:hobby-dev</span><br><span class="line">Adding heroku-postgresql:hobby-dev... done, v3 (free)</span><br></pre></td></tr></table></figure></p>
+<p>This creates a database, and sets a DATABASE_URL config var (you can check by running heroku config).<br>Modify composer.json to include a dependency for a simple PDO service provider, csanquer/pdo-service-provider:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ composer require csanquer/pdo-service-provider=~1.1dev</span><br></pre></td></tr></table></figure></p>
+<p>Install the new dependency:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ composer update</span><br></pre></td></tr></table></figure></p>
+<p>Now modify index.php to extend the app to add a PDO connection:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">$dbopts = parse_url(getenv(&apos;DATABASE_URL&apos;));</span><br><span class="line">$app-&gt;register(new Csanquer\Silex\PdoServiceProvider\Provider\PDOServiceProvider(&apos;pdo&apos;),</span><br><span class="line">               array(</span><br><span class="line">                &apos;pdo.server&apos; =&gt; array(</span><br><span class="line">                   &apos;driver&apos;   =&gt; &apos;pgsql&apos;,</span><br><span class="line">                   &apos;user&apos; =&gt; $dbopts[&quot;user&quot;],</span><br><span class="line">                   &apos;password&apos; =&gt; $dbopts[&quot;pass&quot;],</span><br><span class="line">                   &apos;host&apos; =&gt; $dbopts[&quot;host&quot;],</span><br><span class="line">                   &apos;port&apos; =&gt; $dbopts[&quot;port&quot;],</span><br><span class="line">                   &apos;dbname&apos; =&gt; ltrim($dbopts[&quot;path&quot;],&apos;/&apos;)</span><br><span class="line">                   )</span><br><span class="line">               )</span><br><span class="line">);</span><br></pre></td></tr></table></figure></p>
+<p>Note how this code retrieves the DATABASE_URL config var from the environment using getenv(), and extracts information on hostname, database and credentials from that config var using parse_url().<br>In the same file, add a new handler to query the database:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">$app-&gt;get(&apos;/db/&apos;, function() use($app) &#123;</span><br><span class="line">  $st = $app[&apos;pdo&apos;]-&gt;prepare(&apos;SELECT name FROM test_table&apos;);</span><br><span class="line">  $st-&gt;execute();</span><br><span class="line"></span><br><span class="line">  $names = array();</span><br><span class="line">  while ($row = $st-&gt;fetch(PDO::FETCH_ASSOC)) &#123;</span><br><span class="line">    $app[&apos;monolog&apos;]-&gt;addDebug(&apos;Row &apos; . $row[&apos;name&apos;]);</span><br><span class="line">    $names[] = $row;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  return $app[&apos;twig&apos;]-&gt;render(&apos;database.twig&apos;, array(</span><br><span class="line">    &apos;names&apos; =&gt; $names</span><br><span class="line">  ));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>This ensures that when you access your app using the /db route, it will return all rows in the test_table table, and render the results using the database.twig template. Create the template in the web/views directory:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#123;% extends &quot;layout.html&quot; %&#125;</span><br><span class="line"></span><br><span class="line">&#123;% block content %&#125;</span><br><span class="line">&lt;p&gt;Got these rows from the database:&lt;/p&gt;</span><br><span class="line"></span><br><span class="line">&lt;ul&gt;</span><br><span class="line">&#123;% for n in names %&#125;</span><br><span class="line">  &lt;li&gt; &#123;&#123; n.name &#125;&#125; &lt;/li&gt;</span><br><span class="line">&#123;% else %&#125;</span><br><span class="line">  &lt;li&gt;Nameless!&lt;/li&gt;</span><br><span class="line">&#123;% endfor %&#125;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">&#123;% endblock %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>If you get lost making these changes, take a look at the db branch of the sample app.<br>Deploy the app modifications to Heroku:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;added database access&quot;</span><br><span class="line">$ git push heroku master</span><br></pre></td></tr></table></figure></p>
+<p>If you now access /db you will see Nameless in the output as there is no table in the database. Assuming that you have Postgres installed locally, use the heroku pg:psql command to connect to the database you provisioned earlier, create a table and insert a row:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ heroku pg:psql</span><br><span class="line">psql (9.5.2, server 9.6.2)</span><br><span class="line">SSL connection (cipher: DHE-RSA-AES256-SHA, bits: 256)</span><br><span class="line">Type &quot;help&quot; for help.</span><br><span class="line">=&gt; create table test_table (id integer, name text);</span><br><span class="line">CREATE TABLE</span><br><span class="line">=&gt; insert into test_table values (1, &apos;hello database&apos;);</span><br><span class="line">INSERT 0 1</span><br><span class="line">=&gt; \q</span><br></pre></td></tr></table></figure></p>
+<p>Now when you access your app’s /db route, you will see something like this:<br>Got these rows from the database:</p>
+<ul>
+<li><p>hello database<br>Read more about Heroku PostgreSQL.<br>A similar technique can be used to install MongoDB or Redis add-ons.</p>
+<h2 id="Next-steps"><a href="#Next-steps" class="headerlink" title="Next steps"></a>Next steps</h2><p>You now know how to deploy an app, change its configuration, view logs, scale, and attach add-ons.<br>Here’s some recommended reading:</p>
+</li>
+<li><p>Read (How Heroku Works)[<a href="https://devcenter.heroku.com/articles/how-heroku-works]" target="_blank" rel="noopener">https://devcenter.heroku.com/articles/how-heroku-works]</a> for a technical overview of the concepts you’ll encounter while writing, configuring, deploying and running applications.</p>
+</li>
+<li>Read (Deploying PHP Apps on Heroku)[<a href="https://devcenter.heroku.com/articles/deploying-php]" target="_blank" rel="noopener">https://devcenter.heroku.com/articles/deploying-php]</a> to understand how to take an existing PHP app and deploy it to Heroku.</li>
+<li>Visit (the PHP category)[<a href="https://devcenter.heroku.com/categories/php-support]" target="_blank" rel="noopener">https://devcenter.heroku.com/categories/php-support]</a> to learn more about developing and deploying PHP applications.</li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/07/22/认识git/" data-id="cjjwmt876001fg0ncg21srjy2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/08/14/在heroku上开始一个php应用/" data-id="cjkz3geis001oqgncrrdz69qh" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/heroku/">heroku</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-java事件监听机制" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/08/05/java事件监听机制/" class="article-date">
+  <time datetime="2018-08-05T02:43:36.000Z" itemprop="datePublished">2018-08-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/05/java事件监听机制/">java事件监听机制</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="事件源-、事件、监听器接口、监听器类概念"><a href="#事件源-、事件、监听器接口、监听器类概念" class="headerlink" title="事件源 、事件、监听器接口、监听器类概念"></a>事件源 、事件、监听器接口、监听器类概念</h2><p>button Shape 这是事件源，在这里触发事件。<br>public void actionPerformed(ActionEvent e)<br>或者 public void ShapeMoveDown(Shape shape) 通过actionPerformed、ShapeMoveDown方法处理ActionEvent、Shape事件。<br>ActionListener、ShaperListener是监听器接口<br>ActionAdapter、Controller是实现接口监听器类。也就是说接口委拖这些类来处理事件。<br><img src="http://pbunh12i4.bkt.clouddn.com/blog_mvc_1533438212_19205.png" alt="mvc"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/08/05/java事件监听机制/" data-id="cjkz3geh00019qgncp7hmn4c4" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
 
     </footer>
   </div>
@@ -218,7 +270,7 @@ git config –global user.email “邮箱”
 
   <nav id="page-nav">
     
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/2/">下一页 &raquo;</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/2/">下一页 &raquo;</a>
   </nav>
 
 </section>
@@ -232,7 +284,7 @@ git config –global user.email “邮箱”
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/vmware/">-vmware</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/开发/">-开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bash/">bash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/command/">command</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem/">problem</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vimrepress/">vimrepress</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vundle/">vundle</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/文摘/">文摘</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/视频/">视频</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/音乐/">音乐</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/vmware/">-vmware</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/开发/">-开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bash/">bash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/command/">command</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/">github</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/heroku/">heroku</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/problem/">problem</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vimrepress/">vimrepress</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vundle/">vundle</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/文摘/">文摘</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/网址/">网址</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/视频/">视频</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/记录生活/">记录生活</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/音乐/">音乐</a></li></ul>
     </div>
   </div>
 
@@ -242,7 +294,7 @@ git config –global user.email “邮箱”
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/vmware/" style="font-size: 10px;">-vmware</a> <a href="/tags/开发/" style="font-size: 10px;">-开发</a> <a href="/tags/bash/" style="font-size: 10px;">bash</a> <a href="/tags/command/" style="font-size: 10px;">command</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 15px;">github</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/problem/" style="font-size: 12.5px;">problem</a> <a href="/tags/vim/" style="font-size: 17.5px;">vim</a> <a href="/tags/vimrepress/" style="font-size: 10px;">vimrepress</a> <a href="/tags/vundle/" style="font-size: 10px;">vundle</a> <a href="/tags/文摘/" style="font-size: 20px;">文摘</a> <a href="/tags/视频/" style="font-size: 10px;">视频</a> <a href="/tags/音乐/" style="font-size: 10px;">音乐</a>
+      <a href="/tags/vmware/" style="font-size: 10px;">-vmware</a> <a href="/tags/开发/" style="font-size: 10px;">-开发</a> <a href="/tags/bash/" style="font-size: 10px;">bash</a> <a href="/tags/command/" style="font-size: 10px;">command</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/github/" style="font-size: 15px;">github</a> <a href="/tags/heroku/" style="font-size: 10px;">heroku</a> <a href="/tags/hexo/" style="font-size: 12.5px;">hexo</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/problem/" style="font-size: 12.5px;">problem</a> <a href="/tags/vim/" style="font-size: 17.5px;">vim</a> <a href="/tags/vimrepress/" style="font-size: 10px;">vimrepress</a> <a href="/tags/vundle/" style="font-size: 10px;">vundle</a> <a href="/tags/文摘/" style="font-size: 20px;">文摘</a> <a href="/tags/网址/" style="font-size: 10px;">网址</a> <a href="/tags/视频/" style="font-size: 10px;">视频</a> <a href="/tags/记录生活/" style="font-size: 10px;">记录生活</a> <a href="/tags/音乐/" style="font-size: 10px;">音乐</a>
     </div>
   </div>
 
@@ -251,7 +303,7 @@ git config –global user.email “邮箱”
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a></li></ul>
     </div>
   </div>
 
@@ -264,23 +316,23 @@ git config –global user.email “邮箱”
       <ul>
         
           <li>
+            <a href="/2018/08/18/记录下认识的每一个人/">记录下认识的每一个人</a>
+          </li>
+        
+          <li>
+            <a href="/2018/08/14/在heroku上开始一个php应用/">在heroku上开始一个php应用</a>
+          </li>
+        
+          <li>
+            <a href="/2018/08/05/java事件监听机制/">java事件监听机制</a>
+          </li>
+        
+          <li>
+            <a href="/2018/07/31/常用网址/">常用网址</a>
+          </li>
+        
+          <li>
             <a href="/2018/07/22/使用github desktop连接github/">使用github desktop连接github</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/22/使用git连接github/">使用git连接github</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/22/认识git/">认识git</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/17/认识github/">认识github</a>
-          </li>
-        
-          <li>
-            <a href="/2018/07/15/微信小程序开发/">微信小程序开发</a>
           </li>
         
       </ul>
